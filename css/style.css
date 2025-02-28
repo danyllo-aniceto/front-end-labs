@@ -1,0 +1,64 @@
+/* Global CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+p {
+  color: #183251;
+}
+
+h1 {
+  background-image: url("./../Lab_html_simples/img/sobre-background.jpg");
+}
+
+h2 {
+  border-bottom: 2px groove #333;
+}
+
+figure {
+  background-color: #f2eded;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+figcaption {
+  font-style: italic;
+}
