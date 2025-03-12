@@ -1,4 +1,12 @@
 /* Global CSS Reset */
+:root {
+  --background: #9595953b;
+  --color-base: #333;
+  --color-blue-p: #183251;
+  --figure-background: #a8a8a8;
+  --white-font: #ccc;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,18 +15,18 @@
 
 html,
 body {
-  width: 80%;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  color: #333;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  font-family: "Rock Salt";
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  color: var(--color-base);
+  background-color: var(--background);
 }
 
 a {
   text-decoration: none;
   color: inherit;
+  font-family: "Monoton";
 }
 
 ul,
@@ -45,23 +53,25 @@ textarea {
 }
 
 p {
-  color: #183251;
+  color: var(--color-blue-p);
   padding: 0 45px;
   text-indent: 15px;
 }
 
 h1 {
   background-image: url("./../Lab_html_simples/img/sobre-background.jpg");
+  font-family: "Pacifico";
 }
 
 h2 {
-  border-bottom: 2px groove #333;
+  border-bottom: 2px groove var(--color-base);
   margin-top: 30px;
+  font-family: "Amiri";
 }
 
 figure {
-  background-color: #f2eded;
-  border: 1px solid #ccc;
+  background-color: var(--figure-background);
+  border: 1px solid var(--white-font);
   text-align: center;
   padding: 15px;
   margin: 10px;
