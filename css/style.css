@@ -7,10 +7,13 @@
 
 html,
 body {
-  width: 100%;
-  height: 100%;
+  width: 80%;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
@@ -43,6 +46,8 @@ textarea {
 
 p {
   color: #183251;
+  padding: 0 45px;
+  text-indent: 15px;
 }
 
 h1 {
@@ -51,14 +56,22 @@ h1 {
 
 h2 {
   border-bottom: 2px groove #333;
+  margin-top: 30px;
 }
 
 figure {
   background-color: #f2eded;
   border: 1px solid #ccc;
   text-align: center;
+  padding: 15px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 figcaption {
   font-style: italic;
+  margin-top: 10px;
 }
