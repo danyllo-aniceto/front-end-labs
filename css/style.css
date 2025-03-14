@@ -13,11 +13,14 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   font-family: "Rock Salt";
   font-optical-sizing: auto;
-  font-weight: <weight>;
   font-style: normal;
   color: var(--color-base);
   background-color: var(--background);
