@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid black;
+  margin-bottom: 5px;
+}
+
+fieldset {
+  background-color: antiquewhite;
+}
+
+legend {
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+}
+
+select {
+  width: 100%;
+}
+
+.label-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+}
+
+.button {
+  width: 100%;
+  padding: 6px;
+  color: white;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.orange:hover {
+  background-color: #b07200;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.blue:hover {
+  background-color: #13138d;
+}
+
+.compre-online {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
