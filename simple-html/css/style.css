@@ -1,216 +1,189 @@
-:root {
-  --background: #9595953b;
-  --color-base: #333;
-  --color-blue-p: #183251;
-  --figure-background: #a8a8a8;
-  --white-font: #ccc;
-  --color-base-footer: #777;
+:root{
+  --color-base: hsl(0, 0%, 0%);
+  --color-base-figure-background: #aeaeae;
+  --color-base-figure-border: #000000;
+  --color-base-footer: #777
+  --font-firt-title: "Oswald", sans-serif;
+  --font-second-title:"Emblema One", cursive;
+  --font-body:"Roboto", sans-serif;
+  --font-figurecaption:"Big Shoulders Inline", cursive;
+ 
 
-  --font-primary: "Boldonse", sans-serif;
-  --font-secondary: "Roboto Mono", monospace;
-  --font-title: "Cinzel", serif;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 html {
   scroll-behavior: smooth;
 }
-
-html,
 body {
-  font-family: var(--font-primary);
-  font-optical-sizing: auto;
-  font-style: normal;
   color: var(--color-base);
-  background-color: var(--background);
+  font-family: var(--font-body);
+  font-weight: 500;
+  margin-left: auto;
+  margin-right: auto;
+  width: 940px;
+ 
 }
-
-a {
-  text-decoration: none;
-  color: inherit;
-  font-family: var(--font-secondary);
+h1{
+  background-image: url(../img/sobre-background.jpg);
+  padding: 10px;
+  font-family: var(--font-first-title);
 }
-
-ul,
-ol {
-  list-style: none;
-}
-
-ul li {
-  margin-bottom: 8px;
-  padding-left: 10px;
-  position: relative;
-}
-
-ul li::before {
-  content: "\2022";
-  color: var(--color-base);
-  font-weight: bold;
-  display: inline-block;
-  width: 10px;
-  margin-left: -10px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-button {
-  cursor: pointer;
-  border: none;
-  background: none;
-}
-
-input,
-textarea {
-  font-family: inherit;
-  font-size: inherit;
-}
-
-p {
-  color: var(--color-blue-p);
-  padding: 0 45px;
-  text-indent: 15px;
-}
-
-h1 {
-  background-image: url("./../Lab_html_simples/img/sobre-background.jpg");
-  font-family: var(--font-title);
-}
-
 h2 {
   border-bottom: 2px groove var(--color-base);
   margin-top: 30px;
-  font-family: var(--font-title);
+  font-family: var(--font-second-title);
 }
-
 figure {
-  background-color: var(--figure-background);
-  border: 1px solid var(--white-font);
+  background-color: var(--color-base-figure-background);
+  border: 1px solid var(--color-base-figure-border);
   text-align: center;
-  padding: 10px;
-  margin: 10px;
-  display: flex;
+  padding: 15px;
+  margin: 30px;
+  display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
 
-figure img {
-  padding: 5px;
-  background-color: #fff;
-  border-radius: 5px;
+ 
 }
-
 figcaption {
   font-style: italic;
   margin-top: 10px;
-}
+  font-family: var(--font-figurecaption);
 
+}
+p{
+  padding: 0 45px;
+  text-indent: 15px;
+}
 #centro-distribuicao {
   margin-left: auto;
   margin-right: auto;
-  max-width: 100%;
   width: 550px;
-}
 
-#rodape {
-  color: var(--color-base-footer);
+}
+#footer {
+  color: #777;
   margin: 30px 0;
   padding: 30px 0;
+  color: var(--color-base-footer);
+ 
 }
-
-#rodape img {
+footer img {
   margin-right: 30px;
   vertical-align: middle;
   width: 94px;
 }
-
 #familia-pelho {
   float: right;
   margin: 0 0 10px 10px;
-  max-width: 100%;
-  height: auto;
 }
+
+
+/* DEIXAR A TELA RESPONSIVA */
+/* img {
+  background-color: aqua;
+  padding: 250px;
+  @media (max-width: 1000px) {
+      width: 20px;
+      background: red;
+  }
+} */
+
 
 @media (max-width: 768px) {
+ body{
+  width: auto;
+  margin: 0 20px;
+ }
+
+  h1{
+      font-size: 1.8em;
+      padding: 8px;
+
+  }
+
+  h2{
+      font-size: 1.4em;
+      margin-top: 20px;
+  }
+
+  p{
+      padding: 0 15px;
+      text-indent: 15px;
+      text-align: left;
+      line-height: 1.5;
+  }
+
+  figure{
+      margin: 20px 0;
+      padding: 10px;
+  }
+
   #centro-distribuicao {
-    width: 90%;
-    margin: 0 auto;
+      width: 100%;
+      max-width: 550px;
   }
 
-  header img {
-    display: block;
-    width: 70%;
-    margin: 0 auto;
-  }
-
-  h1 {
-    font-size: 1.8em;
-  }
-
-  h2 {
-    font-size: 1.5em;
-  }
-
-  p {
-    padding: 0 20px;
-    font-size: 1em;
-  }
-
-  figure {
-    margin: 20px auto;
+  #familia-pelho {
+     float: none;
+     margin: 20px auto;
+     display: block;
+     
   }
 }
 
-@media (max-width: 480px) {
-  #centro-distribuicao {
-    width: 95%;
-  }
+  @media (max-width: 480px) {
+      :root {
+          font-size: 14px;
+      }
+     
+      body {
+          margin: 0 10px;
+      }
 
-  header img {
-    width: 80%;
-    display: block;
-    margin: 0 auto;
-  }
+      h1 {
+          font-size: 1.5em;
+          padding: 5px;
+      }
 
-  h1 {
-    font-size: 1.5em;
-    background-position: center;
-    background-size: cover;
-  }
+      h2 {
+          font-size: 1.2em;
+          margin-top: 15px;
+      }
 
-  h2 {
-    font-size: 1.3em;
-  }
+      p{
+          padding: 0;
+          text-indent: 0;
+          font-size: 0.9em;
+      }
 
-  p {
-    padding: 0 10px;
-    font-size: 0.9em;
-  }
+      figure {
+          margin: 15px 0;
+          padding: 8px;
+      }
 
-  ul li {
-    padding-left: 15px;
-    font-size: 0.9em;
-  }
+      ul {
+          padding: 0;
+          list-style: none;
+          font-weight: 400px;
+      }
+ 
+      footer {
+          margin: 20px 0;
+          padding: 20px 0;
+          text-align: center;
+      }
 
-  figure {
-    margin: 10px auto;
-  }
+      footer img {
+          margin-right: auto;
+          margin-left: auto;
+          margin-bottom: 10px;
+          display: block;
 
-  footer {
-    text-align: center;
-  }
+      }
 
-  footer img {
-    width: 70%;
-    margin: 0 auto;
-  }
+      header {
+          display: none;
+      }
+ 
 }
