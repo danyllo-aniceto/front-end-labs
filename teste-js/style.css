@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+#manipulacao-estilo,
+#manipulacao-eventos,
+#interacao-usuario {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+#texto-estilo {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#texto-digitado,
+#saudacao {
+  margin-top: 10px;
+  font-style: italic;
+}
