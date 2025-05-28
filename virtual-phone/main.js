@@ -25,3 +25,5 @@ for(let i = 0; i < teclas.length; i++){
         valorTeclaToDisplay(i);
     }
 }
+
+
